@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Welcome to Students of a class App!!</title>
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  </style>
+</head>
+<body>
+    <h1>Edit all the students that has your prefer age</h1>
+    <form action="/students/change-by-age?_method=PUT" method="POST">
+        <input type="number" name="age" placeholder="Age to edit" min="15" required>
+        <input type="number" name="newAge" placeholder="New age" min="15" required>
+        <input step="0.01" min="0" max="5" type="number" name="newGrade" placeholder="New grade" required>
+        <button>Edit!</button>
+    </form>
+    <a href="/students">go back to the list</a>
+</body>
+</html>

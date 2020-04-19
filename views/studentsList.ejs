@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Welcome to Students of a class App!!</title>
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+  </style>
+</head>
+<body>
+<h1>This is the students list!</h1>
+<% if(typeof students == "undefined"){%>
+      <h4>You dont have any student yet! please start adding someone</h4>
+      <h4><a href="students/new">Add Student</a></h4>
+<%} else {%>
+  <table>
+      <tr>
+          <th>Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+          <th>Final Grade</th>
+          <th>Student profile</th>
+          <th>Edit Student?</th>
+          <th>Delete Student?</th>
+      </tr>
+      <% students.forEach(student => { %>
+      <tr>
+          <th><%= student.name %></th>
+          <th><%= student.lastName %></th>
+          <th><%= student.age %></th>
+          <th><%= student.finalGrade %></th>
+          <th><a href="students/<%=student._id%>"><%= student.name %> Profile</a></th>
+          <th><a href="students/<%=student._id%>/edit">Edit <%= student.name %>?</a></th>
+          <form action="/students/<%= student._id %>?_method=DELETE" method="POST">
+            <th><button><i class="fa fa-trash"></i> Delete</button></th>
+          </form>
+      </tr>
+      <% }); %>
+      </table>
+      <h4><a href="students/new">Add Student</a></h4>
+      <h4><a href="students/grades-average">Get the grade´s average</a></h4>
+      <h4><a href="students/change-by-age">Edit students for their age</a></h4>
+    <% } %>
+</body>
+</html>

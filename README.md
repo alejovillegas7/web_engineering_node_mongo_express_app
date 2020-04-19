@@ -1,5 +1,10 @@
-Aplicacion que ayuda a manjear la información de los estudiantes de un curso
-* la aplicacion permite agregar estudiantes de un curso, editar su informacion, editar la informacion de varios estudantes por su edad, eliminar estudiante y sacarel promedio de las notas totales del curso, ver perfil de un estudiante.
+Aplicacion que ayuda a manjear la información de los estudiantes de un curso, la aplicacion permite
+* agregar estudiantes de un curso
+* editar su informacion
+* editar la informacion de varios estudantes por su edad
+* eliminar estudiante y 
+* sacarel promedio de las notas totales del curso
+* ver perfil de un estudiante (retorna info de un solo registro en la base de datos)
 
 Para correr la app se deben de seguir los siguientes pasos
 * instalar mongoDb en la maquina local

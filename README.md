@@ -1,4 +1,6 @@
-Aplicacion que ayuda a manjear la información de los estudiantes de un curso, la aplicacion permite
+# Alejandro Villegas Lopez, app with nodejs, mongodb(locally) and express
+
+## Aplicacion que ayuda a manjear la información de los estudiantes de un curso, la aplicacion permite
 * agregar estudiantes de un curso
 * editar su informacion
 * editar la informacion de varios estudantes por su edad
@@ -6,7 +8,7 @@ Aplicacion que ayuda a manjear la información de los estudiantes de un curso, l
 * sacarel promedio de las notas totales del curso
 * ver perfil de un estudiante (retorna info de un solo registro en la base de datos)
 
-Para correr la app se deben de seguir los siguientes pasos
+## Para correr la app se deben de seguir los siguientes pasos
 * instalar mongoDb en la maquina local
 * instalar mongo en la maquina
 * descargar el repositorio
@@ -17,7 +19,7 @@ Para correr la app se deben de seguir los siguientes pasos
 * ingresar a "http://localhost:3030" desde el navegador
 * interactuar con la app.
 
-Para utilizar la API como endpoints
+## Para utilizar la API como endpoints
 * abrir el archivo "app.js"
 * toda instruccion que este definida como "res.render" cambiarla por "res.send"
 * guardar y poner a correr la api usando "node app.js"

@@ -24,4 +24,4 @@
 * toda instruccion que este definida como "res.render" cambiarla por "res.send"
 * guardar y poner a correr la api usando "node app.js"
 * utilizar una app como POSTMAN para probar la API despues del paso anterior, utilziando las rutas definidas en el archivo "app.js", y asi puede consultar la informacion requerida.
-* ### ejemplo: "http://localhost:3030/students" (devolverá la info de todos los estudiantes en la base de datos)
+* ### ejemplo: "http://localhost:3030/students" (devolverá el json con la info de todos los estudiantes en la base de datos)
